@@ -1,13 +1,13 @@
 .background {
-  background-color: #a4161a;
-  height: 50px;
+  background-color: #031109;
+  height: 60px;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
 }
 .titleText {
-  color: rgb(66, 181, 21);
+  color: rgb(238, 244, 236);
   font-size: 45px;
   font-weight: 600;
   margin: 0 !important;
@@ -40,7 +40,7 @@
 }
 
 .reserveBtn {
-  background-color: #a4161a;
+  background-color: #031109;
   color: white;
   font-size: 15px;
   font-weight: 700;
@@ -66,7 +66,7 @@
 }
 
 .soonBtn {
-  background-color: #a4161a;
+  background-color: #031109;
   color: white;
   font-size: 15px;
   font-weight: 700;
