@@ -38,7 +38,7 @@ img {
 
 .iniciarSesion{
   text-align: center;
-  color: #A4161A;
+  color: #000000;
   font-size: 30px;
   font-weight: 700;
 }
@@ -54,14 +54,14 @@ img {
 }
 
 .btnEnviar{
-  background-color: #BA181B;
+  background-color: #000000;
   color: white;
   font-weight: 600;
   width:120px;
 }
 
 .btnEnviar:hover{
-  background-color: #A4161A;
+  background-color: #2b2b2b;
   color: white;
 }
 
@@ -76,5 +76,5 @@ img {
 }
 
 .optionsFotterLogin a:hover {
-  color:#B6BABE;
+  color:#333333;
 }
