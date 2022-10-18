@@ -29,10 +29,10 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'CINEMINTIC2022'`, () => {
+  it(`should have as title 'CINEMAROCK'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('CINEMINTIC2022');
+    expect(app.title).toEqual('CINEMAROCK');
   });
 
   it('should run changeLang', () => {

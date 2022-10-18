@@ -7,7 +7,7 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit {
-  title = 'CINEMINTIC2022';
+  title = 'CINEMAROCK';
   language: any;
   langs: string[] = [];
 
