@@ -16,10 +16,7 @@ export class AboutUsComponent implements OnInit {
 
   LauraR: string;
   LauraA:string;
-  //esteban:string;
-  //jorge:string;
-  //juanes: string; 
-  //camilo:string;
+ 
 
   constructor() {
     this.banner1 = '/assets/img/banners/banner1.png';
@@ -31,10 +28,7 @@ export class AboutUsComponent implements OnInit {
 
     this.LauraR = '/assets/img/aboutUs/LauraR.jpeg';
     this.LauraA = '/assets/img/aboutUs/LauraA.jpeg';
-    //this.jorge = '/assets/img/aboutUs/JorgePerez.jpg';
-    //this.juanes = '/assets/img/aboutUs/juanes.jpeg';
-    //this.esteban = '/assets/img/aboutUs/Esteban.jpeg';
-    //this.camilo = '/assets/img/aboutUs/Camilo.jpeg';
+ 
   }
 
   ngOnInit(): void {
