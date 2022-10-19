@@ -14,7 +14,7 @@ export class AboutUsComponent implements OnInit {
   foto1: string;
   foto2: string;
 
-  LauraR: string;
+  LauraR:string;
   LauraA:string;
  
 
