@@ -13,8 +13,9 @@
   .btnComprar {
     text-align: center;
     align-items: center;
-    background-color: #7e0303;
-    color: white;
+    background-color: black;
+    color: rgb(173, 13, 13);
+    font-weight: bold;
     font-size: 13px;
     border-radius: 15px;
     text-transform: uppercase;
@@ -50,12 +51,12 @@
   }
 
   .subtitulos{
-    color: #ba181b;
+    color: rgb(173, 13, 13);
     font-weight: bold;
   }
 
   .titulos{
-    color: #ba181b;
+    color: rgb(173, 13, 13);
     font-weight: bold;
     font-size: 20px;
     text-align: center;

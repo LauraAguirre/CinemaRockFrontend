@@ -54,7 +54,7 @@ p {
 }
 
 .movieTitle {
-  color: #a4161a;
+  color: rgb(173, 13, 13);
   font-size: 25px;
   font-weight: 700;
   text-transform: uppercase;
