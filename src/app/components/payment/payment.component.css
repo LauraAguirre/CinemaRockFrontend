@@ -30,14 +30,14 @@
 }
 
 .title-section {
-  color: #ba181b;
+  color: #3a0c0c;
   font-size: 30px;
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
 }
 .subtitlePayment {
-  color: #ba181b;
+  color: #3a0c0c;
   font-size: 25px;
   font-weight: bold;
   text-transform: uppercase;
@@ -76,7 +76,7 @@
 
 .botonvermas {
   width: 200px;
-  background-color: #ba181b;
+  background-color: #49090a;
   color: white;
   text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.301);
   font-size: 15px;
@@ -84,7 +84,7 @@
 
 .botonvermas:hover {
   color: white;
-  background-color: #660708;
+  background-color: #3f0001;
   text-shadow: 2px -2px 1px rgba(0, 0, 0, 0.35);
 }
 
@@ -125,7 +125,7 @@
 }
 
 .headersSummary{
-  color: #ba181b;
+  color: #362424;
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
