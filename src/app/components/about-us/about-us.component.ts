@@ -26,8 +26,8 @@ export class AboutUsComponent implements OnInit {
     this.foto1 = '/assets/img/aboutUs/cineFoto1.jpg';
     this.foto2 = '/assets/img/aboutUs/cineFoto2.jpg';
 
-    this.LauraR = '/assets/img/aboutUs/LauraR.jpeg';
-    this.LauraA = '/assets/img/aboutUs/LauraA.jpeg';
+    this.LauraR = '/assets/img/aboutUs/lauraR.jpeg';
+    this.LauraA = '/assets/img/aboutUs/lauraA.jpeg';
  
   }
 
