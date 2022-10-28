@@ -23,7 +23,7 @@ module.exports = {
   },
   collectCoverage: true,
   coverageReporters: ['html', 'text', 'json'],
-  coverageDirectory: './coverage/app-cinemintic2022-mf',
+  coverageDirectory: './coverage/cinemaRock',
   coverageThreshold: {
       "global": {
           "lines": 80,
