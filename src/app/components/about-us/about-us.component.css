@@ -10,7 +10,7 @@
 }
 
 .titleText {
-  color: white;
+  color: rgb(173, 13, 13);
   font-size: 45px;
   font-weight: 600;
   margin: 0 !important;
@@ -30,7 +30,7 @@
 }
 
 .movieTitle {
-  background-color: #dcdcdc;
+  background-color: #495057;
   color: white;
   font-size: 13px;
   font-weight: 700;
@@ -94,8 +94,8 @@
   font-size: 30px;
 }
 .section-container {
-  background: #003566;
-  color: white;
+  background: #000000;
+  color: rgb(173, 13, 13);
   width: 100%;
   height: auto;
   margin: 40px auto;

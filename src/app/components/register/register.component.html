@@ -42,7 +42,7 @@
                     <option *ngFor="let genero of generos" [value]="genero">{{genero}}</option>
                   </select>
                   <div *ngIf="submitted && f['genre'].errors" class="invalid-feedback">
-                    <div *ngIf="f['genre'].errors['required']">El genero es requerido</div>
+                    <div *ngIf="f['genre'].errors['required']">El género es requerido</div>
                   </div>
                 </div>
 

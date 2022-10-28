@@ -5,7 +5,7 @@
 }
 
 .background{
-    background-color: #A4161A;
+    background-color: #000000;
     height: 60px;
     display: flex;
     align-items: center;
@@ -18,7 +18,7 @@
 }
 
 .titleText{
-    color: white;
+    color: rgb(173, 13, 13);
     font-size: 45px;
     font-weight: bold;
     margin:  0 !important;
@@ -26,7 +26,7 @@
 }
 
 .titleText2{
-    color: #ba181b;
+    color: rgb(173, 13, 13);
     font-size: 30px;
     text-align: left;
     font-weight: bold;
@@ -47,7 +47,7 @@
 }
 
 .buttonClick{
-    background-color: #ba181b ;
+    background-color: #000000 ;
     color: white;
     font-size:25px ;
     border:none ;
@@ -59,8 +59,10 @@
 }
 
 .buttonClick:hover {
-    background-color: #49505a; /* Green */
-    color: white;
+    background-color: #000000 ;
+    color: rgb(173, 13, 13);
+    align-items: center;  
+    border: 0 !important;
   }
 
 .lista{

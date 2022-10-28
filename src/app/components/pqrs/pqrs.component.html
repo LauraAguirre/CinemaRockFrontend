@@ -25,24 +25,25 @@
 
 <!-- PQRS Content -->
 <p class="titleText2">{{ "PARA NOSOTROS ES MUY IMPORTANTE TU OPINIÓN" | translate }}</p>
-<p class="contentText">{{ "A continuación digita todos los campos y enviamos tu pregunta, queja o reclamo, te contestaremos lo mas rapido posible y lo tendremos en cuenta en nuestros planes de mejora con el fin de darte siempre el mejor servicio." | translate }}</p>
+<p class="contentText">{{ "Nuestros clientes son nuestro mayor motivación para seguir mejorando y llegar a ser número uno en el mercado. Por ello, si tienes una queja, reclamo, duda o sugerencia debe digitar todos los campos a continuación. Tendrás una respuesta lo más pronto posible y lo tendremos en cuenta en nuestros planes de mejora con el fin de darte siempre el mejor servicio.
+    " | translate }}</p>
 <br>  
 
 <form [formGroup]="form" novalidate>
     <div class="form-group">
       <label for="inputEmail1">{{ "Email" | translate }}</label>
-      <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="{{ 'Ingrese Email' | translate }}" required>
+      <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="{{ 'Digite Email' | translate }}" required>
       <div class="invalid-feedback">
         Please choose a username.
       </div>
     </div>
     <div class="form-group">
       <label for="inputNombresApellidos">{{ "Nombres y Apellidos" | translate }}</label>
-      <input type="text" class="form-control" id="inputNombresApellidos" placeholder="{{ 'Ingrese Nombres y Apellidos' | translate }}" required>
+      <input type="text" class="form-control" id="inputNombresApellidos" placeholder="{{ 'Digite Nombres y Apellidos' | translate }}" required>
     </div>
     <div class="form-group">
         <label for="exampleFormControlTextarea1">{{ "Mensaje" | translate }}</label>
-        <textarea class="form-control" id="formControlTextarea1" placeholder="{{ 'Ingrese texto descriptivo' | translate }}" rows="5" required></textarea>
+        <textarea class="form-control" id="formControlTextarea1" placeholder="{{ 'Digite su comentario' | translate }}" rows="5" required></textarea>
     </div>
     <br>            
         <button type="submit" class="buttonClick" (click)="onSubmit()" [disabled]="!form.valid">{{ "Enviar" | translate }}</button>
