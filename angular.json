@@ -6,7 +6,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "APP-CINEMINTIC2022-MF": {
+    "CINEMAROCK": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/app-cinemintic2022-mf",
+            "outputPath": "dist/cinemaRock",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -76,10 +76,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "APP-CINEMINTIC2022-MF:build:production"
+              "browserTarget": "CINEMAROCK:build:production"
             },
             "development": {
-              "browserTarget": "APP-CINEMINTIC2022-MF:build:development"
+              "browserTarget": "CINEMAROCK:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -87,7 +87,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "APP-CINEMINTIC2022-MF:build"
+            "browserTarget": "CINEMAROCK:build"
           }
         },
         "test": {
@@ -107,5 +107,5 @@
       }
     }
   },
-  "defaultProject": "APP-CINEMINTIC2022-MF"
+  "defaultProject": "CINEMAROCK"
 }
