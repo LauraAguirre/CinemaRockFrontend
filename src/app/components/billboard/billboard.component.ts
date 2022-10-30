@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Movies } from 'src/app/interfaces/movies.interface';
 import { MoviesService } from 'src/app/services/movies.service';
 
 @Component({
@@ -10,7 +11,7 @@ export class BillboardComponent implements OnInit {
   banner1: string;
   banner2: string;
   banner3: string;
-  movies: any[] = [];
+  movies: Movies[];
 
   constructor(private moviesService: MoviesService) {
     this.banner1 = '/assets/img/banners/banner1.png';
@@ -20,11 +21,10 @@ export class BillboardComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.moviesService.movies().subscribe((data) => {
-      const films = Object.entries(data);
-      films.forEach((element) => {
-        this.movies.push(element[1]);
-      });
+    
+    this.moviesService.getAllMovies().subscribe(data => {
+      this.movies = data;
+      console.log(this.movies)
     });
   }
 }

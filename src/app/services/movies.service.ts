@@ -2,19 +2,18 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
+import { Movies } from '../interfaces/movies.interface';
 
-const urlMovie = environment.ApiUrl + '/movie';
+const url = environment.ApiUrl + '/movies';
+
 @Injectable({
   providedIn: 'root',
 })
 export class MoviesService {
+
   constructor(private http: HttpClient) {}
 
-  /**
-   *
-   * @returns
-   */
-  public movies(){
-    return this.http.get(urlMovie + '/buscar-peliculas').pipe(map((response) => response as any));
+  public getAllMovies(){
+    return this.http.get<Movies[]>(url + "/findAll");
   }
 }

@@ -5,13 +5,16 @@ import { environment } from 'src/environments/environment';
 import { Peticion } from '../interfaces/peticion.interface';
 import { User } from '../interfaces/user.interface';
 
-const urlUser = environment.ApiUrl + '/user';
+const urlUser = 'https://cinemintic2022-prod.herokuapp.com/user';
 @Injectable({
   providedIn: 'root'
 })
 
 export class UserService {
   constructor(private http: HttpClient) {}
+
+
+  //METODOS VIEJOS
 
   /** 
   * @param username

@@ -65,7 +65,7 @@ export class LoginComponent implements OnInit {
 
   userOn() {
     if (localStorage.getItem('userOn') == 'true') {
-      this.router.navigate(['']);
+      this.router.navigate(['/']);
     }
   }
 

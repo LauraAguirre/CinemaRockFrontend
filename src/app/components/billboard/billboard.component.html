@@ -28,14 +28,14 @@
       <div class="row g-0">
         <!-- Imagen -->
         <div class="col-md-5 posterContainer">
-          <img src="{{ films.image }}" class="poster" alt="..." />
+          <img src="{{ films.imageMovie }}" class="poster" alt="..." />
         </div>
         <!-- Information -->
         <div class="col-md-7 ps-3">
           <div class="colum">
             <!-- Info Movie -->
             <div class="col">
-              <p class="movieTitle">{{ films.name }}</p>
+              <p class="movieTitle">{{ films.nameMovie }}</p>
               <p class="featuresMovie">
                 {{ "EDAD" | translate }}:<a class="featuresValue"
                   >+{{ films.ageMin }}</a
@@ -47,7 +47,7 @@
               </p>
               <p class="featuresMovie">
                 {{ "SALA" | translate }}:
-                <a class="featuresValue">{{ films.idSala }}</a>
+                <a class="featuresValue">{{ films.idRoom }}</a>
               </p>
             </div>
             <!-- Schedule -->
@@ -56,16 +56,16 @@
               <div class="col">
                 <div class="scheduleCard">
                   <div class="cardTitle">
-                    <h5 class="scheduleCardTitle">{{ films.date }}</h5>
+                    <h5 class="scheduleCardTitle">{{ films.genreMovie }}</h5>
                   </div>
                   <div class="card-body">
                     <p class="card-text positionsTitle">
                       {{ "PUESTOSDISPONIBLES" | translate }}:
-                      <a class="positionsValue">{{ films.avalibreChairs }}</a>
+                      <a class="positionsValue">{{ films.chairsAvailable }}</a>
                     </p>
                     <p class="card-text positionsTitle">
                       {{ "PUESTOSOCUPADOS" | translate }}:
-                      <a class="positionsValue">{{ films.occupiedChairs }}</a>
+                      <a class="positionsValue">{{ films.chairsOccupied }}</a>
                     </p>
                     <div class="btnCardContainer pt-2">
                       <a
