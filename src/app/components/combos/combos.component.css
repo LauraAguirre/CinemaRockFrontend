@@ -1,9 +1,21 @@
-.combosContainer {
+  .combosContainer {
     padding: 30px 0 30px 0;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
+  }
+    .combosContainer {
+    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .comboCard{
+    padding: 20px 0 px 0;
+    display: flex;
+    justify-content: center;
+    background:#252525;
   }
 
   .posterContainer{
@@ -36,20 +48,7 @@
     border-radius: 15px;
     text-transform: uppercase;
   }
-
-  .comboCard{
-    padding: 20px 0 5px 0;
-    display: flex;
-    justify-content: center;
-    background:#252525;
-  }
-
-  .combosContainer {
-    padding: 20px 0 20px 0;
-    display: flex;
-    justify-content: center;
-  }
-
+  
   .subtitulos{
     color: rgb(173, 13, 13);
     font-weight: bold;
