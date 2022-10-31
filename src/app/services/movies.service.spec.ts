@@ -46,7 +46,7 @@ describe('MoviesService', () => {
           state: "disponible"
         }
 		};
-		service.movies().subscribe((response) => {
+		service.getAllMovies().subscribe((response) => {
 			expect(response).toEqual(movies);
 		});
 		const urlUser = environment.ApiUrl + '/movie';
