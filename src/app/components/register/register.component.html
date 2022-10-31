@@ -38,7 +38,7 @@
                 <div class="mb-3">
                   <select  [ngClass]="{ 'is-invalid': submitted && f['genre'].errors}" class="form-control selectColor" 
                            id="genre" required formControlName="genre" >
-                    <option value="" disabled>Seleccione un genero</option>
+                    <option value="" disabled>Seleccione su género</option>
                     <option *ngFor="let genero of generos" [value]="genero">{{genero}}</option>
                   </select>
                   <div *ngIf="submitted && f['genre'].errors" class="invalid-feedback">
