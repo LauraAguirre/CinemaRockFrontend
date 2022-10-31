@@ -30,10 +30,10 @@
       class="billboardCardContainer"
       *ngFor="let films of movies.slice(0, 5); let i = index"
     >
-      <div class="card billboardCard" style="max-width: 14rem">
+      <div class="card billboardCard" style="max-width: 16rem">
         <div class="card-header movieTitle">{{ films.nameMovie }}</div>
         <div class="card-body imageMovieContainer">
-          <img src="{{ films.imageMovie }}" class="d-block w-100" alt="..." />
+          <img src="{{ films.imageMovie }}" class="d-block w-90" alt="..." />
         </div>
         <a class="card-footer reserveBtn" href="/payment">
           {{ "RESERVAR" | translate }}

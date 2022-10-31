@@ -38,7 +38,7 @@ img {
 
 .iniciarSesion{
   text-align: center;
-  color: #000000;
+  color: rgb(173, 13, 13);;
   font-size: 30px;
   font-weight: 700;
 }
@@ -55,7 +55,7 @@ img {
 
 .btnEnviar{
   background-color: #000000;
-  color: white;
+  color: rgb(173, 13, 13);
   font-weight: 600;
   width:120px;
 }
