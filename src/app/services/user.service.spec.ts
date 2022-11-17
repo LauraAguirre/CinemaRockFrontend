@@ -82,7 +82,7 @@ describe('UserService', () => {
 			expect(response).toEqual(user);
 		});
 		const urlUser = environment.ApiUrl + '/user';
-		const req = httpTestingController.expectOne(urlUser + '/crear-usuario');
+		const req = httpTestingController.expectOne(urlUser + '/save');
 		expect(req.request.method).toEqual('POST');
 	});
 

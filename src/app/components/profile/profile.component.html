@@ -42,11 +42,11 @@
                         type="text"
                         class="form-control inputs"
                         placeholder="Apellidos"
-                        formControlName="lastName"
-                        [ngClass]="{ 'is-invalid': submitted && userProfileForm.get('lastName')?.errors }"
+                        formControlName="lastname"
+                        [ngClass]="{ 'is-invalid': submitted && userProfileForm.get('lastname')?.errors }"
                       />
-                      <div *ngIf="submitted && userProfileForm.get('lastName')?.errors" class="invalid-feedback">
-                        <div *ngIf="userProfileForm.get('lastName')?.errors?.['required']">Los apellidos son requeridos</div>
+                      <div *ngIf="submitted && userProfileForm.get('lastname')?.errors" class="invalid-feedback">
+                        <div *ngIf="userProfileForm.get('lastname')?.errors?.['required']">Los apellidos son requeridos</div>
                       </div>
                   </div>
             <div class="mb-3">

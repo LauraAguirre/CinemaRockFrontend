@@ -5,7 +5,7 @@ import { environment } from 'src/environments/environment';
 import { Peticion } from '../interfaces/peticion.interface';
 import { User } from '../interfaces/user.interface';
 
-const urlUser = 'https://cinemintic2022-prod.herokuapp.com/user';
+const urlUser = environment.ApiUrl + '/user';
 @Injectable({
   providedIn: 'root'
 })
@@ -13,6 +13,9 @@ const urlUser = 'https://cinemintic2022-prod.herokuapp.com/user';
 export class UserService {
   constructor(private http: HttpClient) {}
 
+ //public buscarUsuarios(){
+ //   return this.http.get<User[]>(urlUser + "/findAll");
+ // }
 
   //METODOS VIEJOS
 
@@ -22,7 +25,7 @@ export class UserService {
   * @returns
   */
   public login(email: string, password: string) {
-    return this.http.post<User>(urlUser + '/autenticar', { email, password })
+    return this.http.post<User>(urlUser + '/signin', { email, password })
       .pipe(map(user => {
           localStorage.setItem('user', JSON.stringify(user));
           return user;
@@ -35,7 +38,19 @@ export class UserService {
    * @returns 
    */
   public register(user: User) {
-    return this.http.post<Peticion>(urlUser + '/crear-usuario',  user);
+    const puto = { 
+      genre: user.genre,
+      lastname: user.lastname, 
+      name: user.name,       
+      email: user.email,
+      address: user.address,
+      phone: user.phone,
+      password: user.password,
+      confirmpassword: user.confirmpassword
+    };
+
+    console.log(puto);
+    return this.http.post<Peticion>(urlUser + '/save',  user);
   }
 
   /**

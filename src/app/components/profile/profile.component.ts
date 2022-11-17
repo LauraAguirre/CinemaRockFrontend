@@ -27,7 +27,7 @@ export class ProfileComponent implements OnInit {
   ) {
     this.userProfileForm = this.fb.group({
       name: new FormControl('', [Validators.required]),
-      lastName: new FormControl('', [Validators.required]),
+      lastname: new FormControl('', [Validators.required]),
       address: new FormControl('', [Validators.required]),
       email: new FormControl('', [Validators.required, Validators.pattern('[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,3}$')]),
       phone: new FormControl('', [Validators.required, Validators.minLength(7)]),
@@ -42,12 +42,12 @@ export class ProfileComponent implements OnInit {
 
   obtener() {
     const profile = JSON.parse(localStorage.getItem('user')!);
-    this.userProfileForm.get('name')?.setValue(profile.user.name);
-    this.userProfileForm.get('lastName')?.setValue(profile.user.lastName);
-    this.userProfileForm.get('email')?.setValue(profile.user.email);
-    this.userProfileForm.get('address')?.setValue(profile.user.address);
-    this.userProfileForm.get('phone')?.setValue(profile.user.phone);
-    this.userProfileForm.get('id')?.setValue(profile.user.id);
+    this.userProfileForm.get('name')?.setValue(profile.name);
+    this.userProfileForm.get('lastname')?.setValue(profile.lastname);
+    this.userProfileForm.get('email')?.setValue(profile.email);
+    this.userProfileForm.get('address')?.setValue(profile.address);
+    this.userProfileForm.get('phone')?.setValue(profile.phone);
+    this.userProfileForm.get('id')?.setValue(profile.id);
   }
 
   onUpdate() {

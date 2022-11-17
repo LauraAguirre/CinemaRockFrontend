@@ -4,7 +4,6 @@
 
 export const environment = {
   production: false,
-  //ApiUrl: 'https://cinemintic2022-prod.herokuapp.com',
   ApiUrl: 'http://localhost:8080/api/v1',
   AppUrl: 'http://localhost:4200'
 };

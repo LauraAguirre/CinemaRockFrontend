@@ -11,7 +11,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { RememberPasswordComponent } from './components/remember-password/remember-password.component';
+import { RememberPasswordComponent } from './components/change-password/remember-password.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { RegisterComponent } from './components/register/register.component';
 import { BillboardComponent } from './components/billboard/billboard.component';

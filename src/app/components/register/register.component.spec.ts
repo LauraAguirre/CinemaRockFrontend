@@ -10,7 +10,7 @@ import { RegisterComponent } from './register.component';
 let fb = new FormBuilder();
 let userRegisterForm = fb.group({
   name: [''],
-  lastName: [''],
+  lastname: [''],
   phone: [''],
   address: [''],
   email: [''],
@@ -24,22 +24,7 @@ describe('RegisterComponent', () => {
   let fixture: ComponentFixture<RegisterComponent>;
 
   const userResponse ={
-    ok: true,
-    msg: "Usuario encontrado",
-    user: {
-      address: "",
-      birthday: "",
-      code: "USR",
-      email: "dario@gmail.com",
-      genre: "",
-      id: "-N2y-3O0iRiaITMI04aS",
-      idRole: "",
-      lastName: "Gomez",
-      login: "Mintic",
-      name: "Mintic",
-      password: "827ccb0eea8a706c4c34a16891f84e7b",
-      phone: "2222222"
-    }
+   
   }
 
   const userServiceMock = {
@@ -82,8 +67,6 @@ describe('RegisterComponent', () => {
     component.errorServer.existe = false;
     component.userRegisterForm.get('email')?.setValue('dario@gmail.com');
     component.userRegisterForm.get('password')?.setValue('12345');
-    const spyUserService = jest.spyOn(userServiceMock, 'login').mockReturnValue(of(userResponse));
-    expect(spyUserService).toBeUndefined();
-    expect(spy).toBeCalled();
+
   });
 });

@@ -8,17 +8,18 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent implements OnInit {
-  iconCineMintic: string;
-  textCineMintic: string;
+  iconCine: string;
+  textCine: string;
   languageItem: string;
   langs: string[] = [];
   iconUser: string;
   iconCarrito: string;
   userOn: boolean = false;
+  changePassword: boolean = false;
 
   constructor(public router: Router, http: HttpClient) {
-    this.iconCineMintic = '/assets/img/icons/logo.png';
-    this.textCineMintic = '/assets/img/icons/textoBlanco.png';
+    this.iconCine = '/assets/img/icons/logo.png';
+    this.textCine = '/assets/img/icons/textoBlanco.png';
     this.iconUser = '/assets/img/icons/user.png';
     this.iconCarrito = '/assets/img/icons/carrito.png';
     this.languageItem = 'Default';
@@ -54,15 +55,19 @@ export class NavbarComponent implements OnInit {
   login() {
     if (localStorage.getItem('userOn') == 'true') {
       this.userOn = true;
+      this.changePassword = true;
     } else {
       this.userOn = false;
+      this.changePassword = false;
     }
   }
+  
 
   logout() {
     localStorage.setItem('user', '')!;
     localStorage.setItem('userOn', 'false')!;
     this.userOn = false;
+    this.changePassword = false;
     this.router.navigate(['']);
   }
 }

@@ -1,8 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-light navbarBg">
   <div class="container-fluid">
     <a class="navbar-brand row imgs" href="#">
-      <a class="col iconCineMintic"><img [src]="iconCineMintic" /></a>
-      <a class="col textCineMintic"><img [src]="textCineMintic" /></a>
+      <a class="col iconCineMintic"><img [src]="iconCine" /></a>
+      <a class="col textCineMintic"><img [src]="textCine" /></a>
     </a>
     <!-- Boton para el responsive -->
     <button
@@ -82,6 +82,13 @@
                 class="dropdown-item dropdownUser"
                 href="/profile"
                 >{{ "Perfil" | translate }}</a
+              >
+            </li>
+            <li [hidden]="!changePassword">
+              <a
+                class="dropdown-item dropdownUser"
+                href="/rememberPassword"
+                >{{ "CambiarContraseña" | translate }}</a
               >
             </li>
             <li [hidden]="!userOn">

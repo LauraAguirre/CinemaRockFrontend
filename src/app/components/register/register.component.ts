@@ -26,7 +26,7 @@ export class RegisterComponent implements OnInit {
   ) {
     this.userRegisterForm = this.fb.group({
       name: ['', Validators.required],
-      lastName: ['', Validators.required],
+      lastname: ['', Validators.required],
       phone: ['', [Validators.required, Validators.minLength(7)]],
       address: ['', Validators.required],
       email: ['', Validators.required],
@@ -37,7 +37,7 @@ export class RegisterComponent implements OnInit {
     this.iconUser = '/assets/img/icons/userprofile.png';
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   get f() {
     return this.userRegisterForm.controls;
@@ -56,12 +56,13 @@ export class RegisterComponent implements OnInit {
 
     this.userService.register(this.userRegisterForm.value).subscribe({
       next: (data) => {
-        if (data.ok) {
+        try {
           localStorage.setItem('user', JSON.stringify(data.object));
           this.router.navigate(['/login']);
-        } else {
+        } catch (error) {
           console.error('Error onRegister()', data.msg_tec);
           this.reportarErrror('Error al realizar envio datos:' + data.msg_tec);
+
         }
         this.loading = false;
       },

@@ -43,14 +43,14 @@ export class LoginComponent implements OnInit {
 
   login() {
     this.submitted = true;
-    this.userService.login(this.userProfileForm.get('email')?.value, this.userProfileForm.get('password')?.value).pipe(first()).subscribe(data => {
-      const users = Object.entries(data);
-      console.log('Aqui',data);
+    this.userService.login(this.userProfileForm.get('email')?.value, this.userProfileForm.get('password')?.value).pipe(first()).subscribe(user=> {
+      const users = Object.entries(user);
+      console.log('Aqui',users);
       
-      if (users[1][1] == 'Usuario encontrado') {
+      if (users[1][1] != null) {
         localStorage.setItem('userOn', 'true');
         window.location.href = environment.AppUrl;
-      } else if (users[1][1] == 'Usuario No Encontrado' && this.userProfileForm.valid) {
+      } else  {
         Swal.fire({
           title: '¡Advertencia!',
           text: 'Usuario o contraseña incorrectos',
@@ -65,7 +65,7 @@ export class LoginComponent implements OnInit {
 
   userOn() {
     if (localStorage.getItem('userOn') == 'true') {
-      this.router.navigate(['/']);
+      this.router.navigate(['/home']);
     }
   }
 

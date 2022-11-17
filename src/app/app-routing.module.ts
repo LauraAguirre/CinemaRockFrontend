@@ -14,7 +14,7 @@ import { PqrsComponent } from './components/pqrs/pqrs.component';
 import { PremiumCardComponent } from './components/premium-card/premium-card.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { RegisterComponent } from './components/register/register.component';
-import { RememberPasswordComponent } from './components/remember-password/remember-password.component';
+import { RememberPasswordComponent } from './components/change-password/remember-password.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
@@ -30,7 +30,6 @@ const routes: Routes = [
   { path: 'premiumCard', component: PremiumCardComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'register', component: RegisterComponent },
-
   { path: 'rememberPassword', component: RememberPasswordComponent },
   { path: 'pqrs', component: PqrsComponent },
 ];
